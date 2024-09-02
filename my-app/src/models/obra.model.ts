@@ -9,12 +9,12 @@ export class Obra{
     inicio: Date;
     fim: Date;
 
-    constructor(codObra:string,name:string,cliente:string,endereco:string,inicio:Date,fim:Date,funcionarios:Funcionario[]){
+    constructor(codObra:string,name:string,cliente:string,endereco:string,inicio:Date,fim:Date){
         this.codObra = codObra;
         this.name = name;
         this.cliente = cliente;
         this.endereco = endereco;
-        this.funcionarios = funcionarios
+        this.funcionarios = []
         this.inicio = inicio;
         this.fim = fim;
     }

@@ -1,0 +1,17 @@
+<h1>Cadastrar Obras</h1>
+
+<form id="obraForm">
+    <label for="codObra">Código da Obra: </label>
+    <input [(ngModel)]="codObra" name="codObra" id="codObra" type="text" placeholder="Código da Obra">
+    <label for="nomeObra">Nome da Obra: </label>
+    <input [(ngModel)]="nomeObra" name="nomeObra" id="nomeObra" type="text" placeholder="Nome da Obra">
+    <label for="clienteObra">Cliente: </label>
+    <input [(ngModel)]="clienteObra" name="clienteObra" id="clienteObra" type="text" placeholder="Cliente">
+    <label for="enderecoObra">Endereço da Obra: </label>
+    <input [(ngModel)]="enderecoObra" name="enderecoObra" id="enderecoObra" type="text" placeholder="Endereço da Obra">
+    <label for="inicioObra">Data de inicio: </label>
+    <input [(ngModel)]="inicioObra" id="inicioObra" name="inicioObra" type="date" placeholder="Data de Inicio">
+    <label for="fimObra">Data de fim: </label>
+    <input [(ngModel)]="fimObra" id="fimObra" name="fimObra" type="date" placeholder="Data de Fim">
+</form>
+<button id="saveObra" (click)="createObra()">Salvar</button>

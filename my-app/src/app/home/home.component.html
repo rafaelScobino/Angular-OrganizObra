@@ -1,2 +1,12 @@
-<h1>Form Test</h1>
-
+<h1>Inputs forms Test</h1>
+<h2>Selecione a Obra</h2>
+<label for="obraSelect">Obra: </label>
+<select id="obraSelect" [(ngModel)]="selectedObra" (focus)="getOptions()">
+    <option *ngFor="let option of options"  [value]="option"> {{option}} </option>
+</select>
+<br>
+<button (click)="obraVis()" >Nova Obra</button>
+<app-obra-form *ngIf="obraFormIsVis"></app-obra-form>
+<button (click)="funcVis()" >Cadastrar Funcionário</button>
+<app-func-form *ngIf="funcFormIsVis" [selectedObra]="selectedObra"></app-func-form>
+<button (click)="visuObras()">Visualizar Obras</button>

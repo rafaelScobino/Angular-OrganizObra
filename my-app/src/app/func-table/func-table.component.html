@@ -1,0 +1,37 @@
+<h1>Obras - Funcionários</h1>
+
+<table *ngFor="let obra of obras">
+    <thead>
+        <tr>
+            <th>Código Obra</th>
+            <th>Descrição</th>
+            <th>Cliente</th>
+        </tr>
+        <tr>
+            <td>{{obra.codObra}}</td>
+            <td>{{obra.name}}</td>
+            <td>{{obra.cliente}}</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>Nome</th>
+            <th>Função</th>
+            <th>Dias</th>
+            <th>Diaria $</th>
+            <th>Remuneração</th>
+        </tr>
+        <tr *ngFor="let funcionario of obra.funcionarios">
+            <td>{{funcionario.name}}</td>
+            <td>{{funcionario.funcao}}</td>
+            <td>{{funcionario.dias}}</td>
+            <td>{{funcionario.diaria}}</td>
+            <td>{{funcionario.remuneracao}}</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>{{obra.endereco}}</td>
+        </tr>
+    </tfoot>
+</table>

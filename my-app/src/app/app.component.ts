@@ -10,12 +10,6 @@ import {HomeComponent} from './home/home.component'
   styleUrl: './app.component.css'
 })
 
-
-
-
-
-
-
 export class AppComponent {
   title = 'my-app';
 }

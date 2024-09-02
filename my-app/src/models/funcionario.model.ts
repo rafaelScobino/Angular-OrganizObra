@@ -1,16 +1,16 @@
 export class Funcionario {
     name: string;
     funcao: string;
-    horas: number;
+    dias: number;
     diaria: number;
     remuneracao: number;
 
-    constructor(name:string,funcao:string,horas:number,diaria:number){
+    constructor(name:string,funcao:string,dias:number,diaria:number){
         this.name = name;
         this.funcao = funcao;
-        this.horas = horas;
+        this.dias = dias;
         this.diaria = diaria;
-        this.remuneracao = this.horas * this.diaria
+        this.remuneracao = this.dias * this.diaria
     }
 
 
